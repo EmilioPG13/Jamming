@@ -52,6 +52,12 @@ function App() {
         const existingTrack = playlistTracks.filter((t) => t.id !== track.id);
         setPlaylistTracks(existingTrack);
     }
+
+    function updatePlaylistName(name) {
+        setPlaylistName(name);
+    }
+
+    
 }
 
 
