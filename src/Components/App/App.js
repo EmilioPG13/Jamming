@@ -36,8 +36,20 @@ function App() {
             artist: "Example Playlist Artist 3",
             album: "Example Playlist Album 3",
             id: 33,
-        }
+        },
     ]);
+
+    function addTrack(track) {
+        const existingTrack = playlistTracks.concat(track);
+        if (existingTrack) {
+            console.log("Track is already added");
+        } else {
+            setPlaylistTracks(newTrack);
+        }
+    }
+
+    
 }
+
 
 export default App;
