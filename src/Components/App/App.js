@@ -64,6 +64,11 @@ function App() {
             setPlaylistTracks([]);
         })
     }
+
+    function search(term) {
+        Spotify.search(term).then((result) => setSearchResults(result));
+        console.log(term);
+    }
 }
 
 
