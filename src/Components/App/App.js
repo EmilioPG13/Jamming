@@ -48,7 +48,10 @@ function App() {
         }
     }
 
-    
+    function removeTrack(track) {
+        const existingTrack = playlistTracks.filter((t) => t.id !== track.id);
+        setPlaylistTracks(existingTrack);
+    }
 }
 
 
