@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './SearchResults.module.css';
-import TrackList from '../TrackList/Tracklist';
+import TrackList from '../Tracklist/Tracklist';
 
 function SearchResults(props) {
     return (
@@ -8,7 +8,7 @@ function SearchResults(props) {
             {/* Add tracklist component */}
             <TrackList 
                 userSearchResults={props.userSearchResults}
-                isRemoval={false}
+                isRemoval={true}
                 onAdd={props.onAdd}
             />
         </div>
