@@ -63,10 +63,14 @@ function App() {
 
     function savePlaylist() {
         const trackURIs = playlistTracks.map((t) => t.uri);
+        Spotify.savePlaylist(playlistName, trackURIs).then(() => {
+            updatePlaylistName("New Playlist");
+            setPlaylistTracks([]);
+        });
     }
 
     function search(term) {
-        Spotify.search(term).then((result) => setSearchResults(result))
+        Spotify.search(term).then((result) => setSearchResults(result));
         console.log(term);
     }
 
