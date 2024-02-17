@@ -1,6 +1,7 @@
 let accessToken = "";
 const clientID = "ee586e7684594f909b05cbe8bf48d7e9";
-const redirectUrl = "http://localhost:3000";
+// const redirectUrl = "http://localhost:3000";
+const redirectUrl = "https://emiliojammingproject.surge.sh";
 
 const Spotify = {
     getAccessToken() {
@@ -47,6 +48,33 @@ const Spotify = {
                     uri: t.uri,
                 }));
             });
+    },
+
+    savePlaylist(name, trackUris) {
+        if (!name || !trackUris) return;
+        const aToken = Spotify.getAccessToken();
+        const headers: { Authorization: `Bearer ${aToken}` };
+        let userId;
+        return fetch(`https://api.spotify.com/v1/me`, {headers : header})
+        .then(response => response.json())
+        .then((jsonResponse) => {
+            userId = jsonResponse.id;
+            let playlistId;
+            return fetch(`https://api.spotify.com/v1/users/{user_id}/playlists`, {
+                headers: headers,
+                method: "post",
+                body: JSON.stringify({name: name}),
+            })
+            .then((response) => response.json())
+            .then((jsonResponse) => {
+                playlistId = jsonResponse.id;
+                return fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks`, {
+                    headers : header,
+                    method: "post",
+                    body: JSON.stringify({ uris: trackUris }),
+                })
+            });
+        });
     },
 };
 
