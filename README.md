@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+## README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project Overview
 
-## Available Scripts
+The Jammming project is a React web application that allows users to search the Spotify library, create custom playlists, and save them to their Spotify accounts. The purpose of this project is to practice building a web app using React components, passing state, and making requests with the Spotify API.
 
-In the project directory, you can run:
+### Technologies Used
 
-### `npm start`
+- HTML
+- CSS
+- JavaScript
+- React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Users can search for songs by song title.
+    - The application can also include functionality to search by other attributes like artist's name, genre, etc.
+- Users can see information about each song such as title, artist, and album for the songs they queried.
+    - The design of the information displayed can be customized.
+- Users can export their custom playlists to their personal Spotify accounts.
 
-### `npm test`
+### Future Work
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Implement user authentication to allow users to log in with their Spotify accounts.
+- Improve the user interface and design of the web application.
+- Add additional features such as creating and managing multiple playlists, adding song recommendations, etc.
 
-### `npm run build`
+# How to Run the Application Locally in Your Computer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository from GitHub.
+2. Install the necessary dependencies using `npm install`.
+3. Obtain a Spotify API access token.
+4. Set the access token in the Spotify utility file.
+5. Run the application using `npm start`.
+6. Access the application in your web browser at `http://localhost:3000`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Run the Application In Browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For this application, I used [surge](https://medium.com/surge-sh/introducing-surge-the-cdn-for-front-end-developers-b4a50a61bcfc) as a deployment method. To view the application, simply follow these steps:
 
-### `npm run eject`
+1. Click on this link: [https://emiliojammingproject.surge.sh](https://emiliojammingproject.surge.sh/)
+2. That's it.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Acknowledgements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was developed as part of a React web development course in the Front-End Path at [Codecademy](https://www.codecademy.com).
