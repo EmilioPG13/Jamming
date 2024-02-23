@@ -1,18 +1,44 @@
-# Project Overview
+### Project Overview
 
-Welcome to the "Adopt a Pet!" project. This is a pet adoption website that allows users to view all animals of a specific species and view the profiles of individual animals. The objective was to add client-side routing to the application using React Router so that the `HomePage` displays only pets of the species the user wants to view, and the `PetDetailsPage` displays when the browser’s URL includes a specific pet’s `id`. If a user clicks a pet whose details are not available, they are redirected to a `PetNotFoundPage`, where they can return to the root page.
+The Jammming project is a React web application that allows users to search the Spotify library, create custom playlists, and save them to their Spotify accounts. The purpose of this project is to practice building a web app using React components, passing state, and making requests with the Spotify API.
 
-# Technologies Used
+### Technologies Used
 
-This project was created using Create React App and employs React Router for client-side routing. The application also uses Mock Service Worker (MSW) to replicate the functionality of an external API, necessitating the use of Google Chrome with enabled third-party cookies.
+- HTML
+- CSS
+- JavaScript
+- React
 
-# Features and How to Run Application
+### Features
 
-Key features include a `HomePage` that fetches and displays all adoptable pets, a `PetDetailsPage` for individual pet details, a `SearchPage` that filters pets by name, and a `PetNotFoundPage` for instances when a pet's details are unavailable.
+- Users can search for songs by song title.
+    - The application can also include functionality to search by other attributes like artist's name, genre, etc.
+- Users can see information about each song such as title, artist, and album for the songs they queried.
+    - The design of the information displayed can be customized.
+- Users can export their custom playlists to their personal Spotify accounts.
 
-To run this application on your own computer, follow these steps:
+### Future Work
 
-1. Download the required files.
-2. Open the project folder in your text editor.
-3. Install all dependencies by running the command `npm install`.
-4. Start the application locally using the command `npm start`.
+- Implement user authentication to allow users to log in with their Spotify accounts.
+- Improve the user interface and design of the web application.
+- Add additional features such as creating and managing multiple playlists, adding song recommendations, etc.
+
+# How to Run the Application Locally in Your Computer
+
+1. Clone the repository from GitHub.
+2. Install the necessary dependencies using `npm install`.
+3. Obtain a Spotify API access token.
+4. Set the access token in the Spotify utility file.
+5. Run the application using `npm start`.
+6. Access the application in your web browser at `http://localhost:3000`.
+
+## How to Run the Application In Browser
+
+For this application, I used [surge](https://medium.com/surge-sh/introducing-surge-the-cdn-for-front-end-developers-b4a50a61bcfc) as a deployment method. To view the application, simply follow these steps:
+
+1. Click on this link: [https://emiliojammingproject.surge.sh](https://emiliojammingproject.surge.sh/)
+2. That's it.
+
+## Acknowledgements
+
+This project was developed as part of a React web development course in the Front-End Path at [Codecademy](https://www.codecademy.com/).
